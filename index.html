@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="images/">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container-fluid bg-black">
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Logo.PNG" alt="" class="logo">
+                <ul id="sidemenu">
+                     <li><a href="#header" class="text-danger fw-bold">Home</a></li>
+                     <li><a href="#about"class="text-danger fw-bold">About </a></li>
+                     <li><a href="#services"class="text-danger fw-bold">Services</a></li>
+                     <li><a href="#portfolio"class="text-danger fw-bold">Portfolio</a></li>
+                     <li><a href="#contact"class="text-danger fw-bold">Contact</a></li>   
+                     <span  class="  bi bi-x text-light" onclick="closemenu()"></span>   
+                </ul>
+                <span class="bi bi-list text-light" onclick="openmenu()"></span>
+            </nav>
+            <div class="header-text">
+                <p class="text-white typing-animation" id="ux-designer">UI/UX Designer</p>
+                <h1 class="text-white typing-animation" id="intro" >Hi, I'm  <span>Jax</span> From India.</h1>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ....................about........ -->
+     <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/User.jpg"  width="400" height="400" class="mt-4" >
+
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p  >Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quaerat molestiae blanditiis cumque error fuga, dolore exercitationem quasi earum at soluta optio vel ipsam non maxime pariatur facilis omnis nostrum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ullam earum debitis, nisi ipsa at, cum eaque qui fugit officia commodi vel, iste harum velit quia inventore aspernatur dignissimos placeat!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Designing Web/App Interfaces</li>
+                            <li><span>App Development</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="Experience">
+                        <ul>
+                            <li><span>2025-Current</span><br>UI Development Tranning at Naresh It </li>
+                            <li><span>2022</span><br>UI tranning</li>
+                            <li><span>2021</span><br>UI tranning</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="Education">
+                        <ul>
+                            <li><span>2025-Current</span><br>UI tranning in Naresh It ,Hyderabad</li>
+                            <li><span>2020-2024</span><br>Btech From GITU University ,Gunupur ,Odisha</li>
+                            <li><span>2018-2020</span><br>Intermediate From OSCIT ,Puri,Odisha</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+     </div>
+     <!-- ................................services......................... -->
+      <div id="services" class="text-white">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+             <div class="services-list">
+                <div>
+                    <span class="bi bi-code-slash"></span>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam adipisci laborum pariatur inventore aliquam odit asperiores obcaecati, vero doloremque vitae tempore, earum, quis sapiente molestias dolorum nulla sunt non hic.</p>
+                     <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <span class="bi bi-crop"></span>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam adipisci laborum pariatur inventore aliquam odit asperiores obcaecati, vero doloremque vitae tempore, earum, quis sapiente molestias dolorum nulla sunt non hic.</p>
+                     <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <span class="bi bi-app"></span>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam adipisci laborum pariatur inventore aliquam odit asperiores obcaecati, vero doloremque vitae tempore, earum, quis sapiente molestias dolorum nulla sunt non hic.</p>
+                     <a href="#">Learn more</a>
+                </div>
+             </div>
+
+        </div>
+
+      </div>
+      <!-- .........................portfolio....................... -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.jpg"  alt="">
+                        <div class="layer">
+                            <h3 class="text-white">Weather Forcast</h3>
+                            <p c class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ipsam placeat, dignissimos accusantium distinctio fuga ducimus eligendi voluptatum ullam harum natus! Illo vitae cum accusantium ab ut, minus dolor distinctio.</p>
+                            <a href="#"><span class="bi bi-box-arrow-up-right"></span></a>
+
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-1.jpg"  alt="">
+                        <div class="layer">
+                            <h3 class="text-white">Shopper-Template</h3>
+                            <p c class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ipsam placeat, dignissimos accusantium distinctio fuga ducimus eligendi voluptatum ullam harum natus! Illo vitae cum accusantium ab ut, minus dolor distinctio.</p>
+                            <a href="#"><span class="bi bi-box-arrow-up-right"></span></a>
+
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-1.jpg" alt="">
+                        <div class="layer">
+                            <h3 class="text-white">FakeStore</h3>
+                            <p c class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ipsam placeat, dignissimos accusantium distinctio fuga ducimus eligendi voluptatum ullam harum natus! Illo vitae cum accusantium ab ut, minus dolor distinctio.</p>
+                            <a href="#"><span class="bi bi-box-arrow-up-right"></span></a>
+
+                        </div>
+                    </div>
+
+                </div>
+                <a href="#" class="btn text-white border-2 border-white btn btn-outline-danger" >See more</a>
+            </div>
+        </div>
+        <!-- ..............Contact -->
+         <div id="contact">
+            <div class="container ">
+                <div class="row">
+                    <div id="contact-left" class="">
+                        <h1 class="sub-title ms-4">Contact Me</h1>
+                        <p class="text-light"> <span class="bi bi-send m-2 fs-2 text-danger" ></span>contact@example.com</p>
+                        <p class="text-light"> <span class="bi bi-phone-fill m-2  fs-2 text-danger "></span>8260549893</p>
+                        <div class="social-icons ms-4">
+                            <a href="https://facebook.com"><span class=" bi bi-facebook"></span></a>
+                            <a href=""><span class="bi bi-twitter-x"></span></a>
+                            <a href=""><span class=" bi bi-instagram"></span></a>
+                            <a href=""><span class=" bi bi-linkedin"></span></a>
+                        </div>
+                        <a href="images/jagankumarpanda.pdf" download class="btn btn-outline-danger ms-4 w-60">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet" class="w-100">
+                            <input type="text" name="Name"   placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn-outline-danger ms-4">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="copyright w-100 bg-dark p-2 t ">
+                <p class="text-light text-center fw-semibold ">Copyright @ jax. Made with <span class=" bi bi-heart-fill text-danger"></span> by Jagan Kumar Panda</p>
+
+            </div>
+         </div>
+
+     <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-content");
+        function opentab(tabname){
+            for (tablink of tablinks){
+                tablink.classList.remove('active-link');
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add('active-tab');
+        }
+     </script>
+     <script>
+        var sidemenu = document.getElementById("sidemenu");
+         function openmenu()
+         {
+            sidemenu.style.right="0"
+         }
+         function closemenu()
+         {
+            sidemenu.style.right="-200px"
+         }
+     </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwAwDsSq1JvlCuGC9DzQkRyFuG8dm37D9nFXlhOQ7pCKwh6_6jeh4CiiKBK9ocp2rM/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent successfully!"; 
+                setTimeout(()=> {
+            
+                msg.innerHTML="";
+            },5000);
+            form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
